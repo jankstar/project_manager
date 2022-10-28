@@ -1,6 +1,6 @@
 {
   "name": "project_manager",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "start": "vite",
@@ -46,6 +46,8 @@
     "@ui5/webcomponents": "^1.4.0",
     "@ui5/webcomponents-base": "^1.4.0",
     "@ui5/webcomponents-fiori": "^1.4.0",
-    "@ui5/webcomponents-icons": "^1.4.0"
+    "@ui5/webcomponents-icons": "^1.4.0",
+    "@ui5/webcomponents-icons-business-suite": "^1.8.0",
+    "@ui5/webcomponents-icons-tnt": "^1.8.0"
   }
 }
