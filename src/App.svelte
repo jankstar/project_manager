@@ -45,7 +45,7 @@
     setTheme("sap_horizon");
 
     const shellBarTitle: string = "SAP Projektmanager";
-    const dialogHeaderText: string = "Edit Todo";
+    //const dialogHeaderText: string = "Edit Todo";
 
     // Elements
     let themeSettingsPopover;
@@ -143,6 +143,12 @@
 
     onMount(() => {
         fcl = document.getElementById("fcl");
+        try {
+            myChart = new sap.suite.ui.commons.ChartContainer("myCart", {});
+            document.getElementById("chart").appendChild(myChart);
+        } catch (e) {
+            console.log(e);
+        }
     });
 
     let project = data[0];
@@ -166,9 +172,8 @@
         <div slot="midColumn">
             <ProjectDetail {setLayout} bind:project />
         </div>
-
-
     </ui5-flexible-column-layout>
+    <div id="chart" />
 
     <ui5-popover
         bind:this={themeSettingsPopover}
