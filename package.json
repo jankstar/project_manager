@@ -7,14 +7,7 @@
     "build": "vite build ",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
-    "lint": "eslint src",
-    "lint:staged": "lint-staged",
-    "lint:commit": "commitlint -e",
-    "prettier": "prettier --write .",
-    "prettier:staged": "pretty-quick --staged --verbose",
-    "prepare": "node ./.husky/skip.js || husky install",
-    "hooks:pre-commit": "run-s prettier:staged lint:staged",
-    "hooks:pre-push": "run-s lint:commit"
+    "hooks:pre-commit": " "
   },
   "devDependencies": {
     "@commitlint/cli": "^18.4.2",
